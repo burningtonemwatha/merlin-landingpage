@@ -1,3 +1,5 @@
+### Live deployed link
+https://josephbill.github.io/merlin-landingpage/
 ## MODERN WEB DEVELOPMENT 
 Front End : client side of the web app : what your user can see and interact with 
 Back End : server scripting of the web app : database infrastructure, server scripts
@@ -90,6 +92,7 @@ Selectors
 .classname {
     styling_property : value_property
 }
+- Pseudo selectors : specify the element to be styled if its with a group i.e. like a class 
 
 
 #### GIT COMMANDS 
@@ -105,7 +108,8 @@ Selectors
 red :not ready , green: ready 
 - git add . - adds the files to git for tracking 
 - git commit -m "commit message" - special message tagged to every version update 
-- git push -u origin master - command that will push the work from the local git folder to the repository on github
+- git checkout -b branchname
+- git push -u origin branchname - command that will push the work from the local git folder to the repository on github
 
 ### CSS Layouts 
 - Css GRID 
@@ -122,3 +126,89 @@ side menu                                 main content                          
 l - r 
 12  /  4  = 3 
 4 -items
+
+### HTML and Javascript 
+- How to write javascript 
+   1. Write the code in the javascript file and connect the HTML page 
+   2. Write JS in HTML via the script tag element <script></script>
+
+
+### DOM - Document  Object Model 
+- tree structure implementation of your HTML elements for the current page displayed on the broswer
+- browsers allow JS to interact with the elements in the tree structure on runtime  
+
+<html>
+    <head>
+        <title></title>
+        <link/>
+    </head>
+    <body>
+        <p>Simple Paragraph</p>
+    </body>
+</html>
+
+document
+     - head - title 
+            - link 
+     - body - p
+
+     elements - nodes 
+
+JS can manipulate any node within the given tree structure based off an event. 
+
+### Events on the webpage ? 
+1. DOMContentLoaded - when all html elements are rendered on the screen
+
+document.addEventListener('event' , action)
+the action is represented using functions 
+document.addEventListener('event' , function(){
+    // executed 
+})
+element.eventListener('event' , action)
+
+2. Click, onPlay , onDrag , hold , hover , scroll - mouse , 
+3. submit - forms - very specific to forms  
+4. typing - keyUp event , keyDown - events 
+
+
+### selecting the elements to be affected by chosen event 
+### DOM methods for selection 
+1. getElementById()
+2. getElementsByTagName()
+3. getElementsByClassName()
+
+### from example what is innerHTML 
+is an example of an element property 
+
+
+
+
+
+###  5 minutes left - excercise 
+
+- the assessment on Friday , - add semantics to the portfolio page 
+- make github update and share 
+
+- update the HTML elements for your portfolio page to use semantics 
+
+2:55 PM . Continue 
+
+
+### Errors In Programming 
+- Syntax errors - wrong typing of code formats respective to programming language 
+ - Use AI as guide - ctrl + shift + I / cmd + shift + I 
+ - Identation - how code is arranged 
+
+- Runtime errors - Errors encountered when application is running - crash the system. / feature will not work
+
+- to identify such errors  -   
+   HTMl + Javascript - browsers console 
+   Native Javascript (Nodejs) - terminal logs 
+   Python / Django  - terminal logs  
+
+- TypeError  - Errors encountered when application is running - they normally point to wrong use of a coding concept respective to the programming language 
+
+- Logical Errors - Your applications - Your application executes but the result is wrong 
+
+1 + 1  = 2
+1 * 1 = 1
